@@ -26,6 +26,4 @@ import (
 type Example struct {
   Field jsonb.JSONB
 }
-
-And then use your standard json.Marshal/Unmarshal methods
 ```
