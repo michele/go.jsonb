@@ -1,6 +1,10 @@
-hash: 2071ddcb4d154407815e9f86a7d2c39fd763d822cde3632ac269e554b88895ed
-updated: 2017-01-30T17:11:32.883451389+01:00
-imports: []
+hash: d9f27d27753b7d5c4eb98fd73d25beb02279fdead784c26e57586757be4f2b1b
+updated: 2017-01-30T19:56:32.004821401+01:00
+imports:
+- name: github.com/lib/pq
+  version: 8df6253d1317616f36b0c3740eb30c239a7372cb
+  subpackages:
+  - oid
 testImports:
 - name: github.com/davecgh/go-spew
   version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
