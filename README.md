@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/michele/echo-requestid.svg?branch=master)](https://travis-ci.org/michele/echo-requestid) [![Go Report Card](https://goreportcard.com/badge/github.com/michele/echo-requestid)](https://goreportcard.com/report/github.com/michele/echo-requestid)
+[![Build Status](https://travis-ci.org/michele/go.jsonb.svg?branch=master)](https://travis-ci.org/michele/go.jsonb) [![Go Report Card](https://goreportcard.com/badge/github.com/michele/go.jsonb)](https://goreportcard.com/report/github.com/michele/go.jsonb)
 
 ## Postrgres' JSONB implementation for Go
 
