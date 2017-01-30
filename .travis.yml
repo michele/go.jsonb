@@ -11,7 +11,7 @@ install:
 before_script:
   - cp .travis.database.yml database.yml
   - psql -c 'create database jsonb_test;' -U postgres
-  - psql -c 'CREATE USER jsonb_user WITH PASSWORD "jsonb_pass";'
+  - psql -c 'CREATE USER jsonb_user WITH PASSWORD "jsonb_pass";' -U postgres
   - psql -c 'CREATE TABLE "test" ("id" serial,"field" jsonb,PRIMARY KEY ("id"));' -U postgres -djsonb_test
   - psql -c 'GRANT ALL ON SEQUENCE public.test_id_seq TO jsonb_user; GRANT ALL ON TABLE public.test TO jsonb_user;' -U postgres -djsonb_test
 script:
