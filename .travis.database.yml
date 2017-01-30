@@ -1,0 +1,5 @@
+test:
+  adapter: postgresql
+  database: jsonb_test
+  user: jsonb_user
+  password: jsonb_pass

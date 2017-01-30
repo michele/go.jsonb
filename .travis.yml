@@ -1,0 +1,17 @@
+language: go
+go:
+    - 1.6
+    - 1.7.x
+    - master
+install:
+    - go get github.com/Masterminds/glide
+    - glide install
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database jsonb_test;' -U jsonb_user
+  - psql -c 'CREATE TABLE "test" ("id" serial,"field" jsonb,PRIMARY KEY ("id"));' -U jsonb_user -djsonb_test'
+script:
+    - go test -v $(glide nv)
+matrix:
+  allow_failures:
+    - go: master
